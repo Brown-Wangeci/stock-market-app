@@ -6,7 +6,7 @@ import axios from "axios";
 const Cards = ({searchString}) => {
     const [trend, setTrend] = useState(null);
     const findValue = (elem) => elem.toLowerCase().includes(searchString.toLowerCase());
-    const apiKey = process.env.REACT_APP_API__KEY;
+    const apiKey = process.env.REACT_APP_API_KEY;
 
     useEffect(
         () => {
@@ -33,7 +33,7 @@ const Cards = ({searchString}) => {
             <div className="cards_title"><h2>Trending Indexes</h2></div>
             {
                 trend ? (
-                    <div className="containe-fluid">
+                    <div className="container-fluid">
                         <div className="container-fluid">
                             <div className="row text-center wrapper">
                                 {

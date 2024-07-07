@@ -10,7 +10,7 @@ const Card = ( {symbol}) => {
             <div className="card_body">
                 <h2 className="card_title">{symbol}</h2>
             </div>
-            <button className="card_btn" onClick={() => navigate('/stocks/:${symbol}',{ state: symbol})}>View Details</button>
+            <button className="card_btn" onClick={() => navigate(`/stocks/:${symbol}`,{ state: symbol})}>View Details</button>
         </div>
      );
 }
